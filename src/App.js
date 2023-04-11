@@ -9,6 +9,13 @@ import currency from './images/image-currency.jpg'
 import restaurant from './images/image-restaurant.jpg'
 import plane from './images/image-plane.jpg'
 import confetti from './images/image-confetti.jpg'
+import logo from './images/logo.svg'
+import twitter from './images/icon-twitter.svg'
+import youtube from './images/icon-youtube.svg'
+import pinterest from './images/icon-pinterest.svg'
+import facebook from './images/icon-facebook.svg'
+import instagram from './images/icon-instagram.svg'
+
 
 
 function App() {
@@ -103,6 +110,28 @@ function App() {
               It’s easy to request an invite through the site ...</p>
             </div>
           </div>
+      </div>
+      <div className='bg-slate-800 py-[5%]'>
+        {/* <img src={logo} alt=''/> */}
+        <div className='flex py-[5%] justify-center'  >
+          <img src={facebook} alt=''/>
+          <img src={youtube} alt=''/>
+          <img src={twitter} alt=''/>
+          <img src={pinterest} alt=''/>
+          <img src={instagram} alt=''/>
+        </div>
+        <ul className='text-[16px] pt-[5%] text-white text-center' >
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Blog</li>
+          <li>Careers</li>
+          <li>Support</li>
+          <li>Private Policy</li>
+        </ul>
+        <div>
+          <Button/>
+        </div>
+        <footer className='text-white text-center'>© Easybank. All Rights Reserved</footer>
       </div>
       </div>
    
