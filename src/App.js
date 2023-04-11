@@ -16,12 +16,12 @@ function App() {
         <div className='absolute bg-intromobile bg-no-repeat p-4 top-[0%] z-[-1] '>
           <img  src={mockups} alt="asset"/>
         </div>
-        <div className='pt-[95%] px-[9.5%] text-center'>
+        <div className='pt-[99%]  px-[9.5%] text-center'>
           <h1 className='text-3xl text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
           <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
            for spending, saving, budgeting, investing, and much more.</p>
         </div>
-        <div>
+        <div className=''>
           <Button/>
         </div>
       </div>
