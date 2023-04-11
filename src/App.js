@@ -67,7 +67,7 @@ function App() {
       </div>
       <div className='px-[5%] py-[5%] bg-slate-50'>
           <h1 className='text-center text-3xl' >Latest Articles</h1>
-          <div className="my-[7%] bg-white rounded-[10px]">
+          <div className="my-[7%] bg-white rounded-[10px] shadow-xl">
             <img className="rounded-t-[10px]" src={currency} alt=''/>
             <div className='p-[7%] '>
               <h4 className="text-[12px]">By Claire Robinson</h4>
@@ -76,7 +76,7 @@ function App() {
               forced to only receive money in a single …</p>
             </div>
           </div>
-          <div className="my-[7%] bg-whi rounded-[10px]te">
+          <div className="my-[7%] bg-whi rounded-[10px] shadow-xl">
           <img className="rounded-t-[10px]" src={restaurant} alt=''/>
             <div className='p-[7%]' >
               <h4 className="text-[12px]">By Wilson Hutton</h4>
@@ -85,7 +85,7 @@ function App() {
               realistic limits each month. That means you …</p>
             </div>
           </div>
-          <div className="my-[7%] bg-white rounded-[10px]">
+          <div className="my-[7%] bg-white rounded-[10px] shadow-xl">
             <img className="rounded-t-[10px]" src={plane} alt=''/>
             <div className='p-[7%]' >
               <h4 className="text-[12px]">By Wilson Hutton</h4>
@@ -94,7 +94,7 @@ function App() {
               while you’re abroad. We’ll even show you …</p>
             </div>
           </div>
-          <div className="my-[7%] bg-white rounded-[10px]">
+          <div className="my-[7%] bg-white rounded-[10px] shadow-xl">
             <img className="rounded-t-[10px]" src={confetti} alt=''/>
             <div className="p-[7%]">
               <h4 className="text-[12px]">By Claire Robinson</h4>
