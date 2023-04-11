@@ -5,6 +5,10 @@ import onboarding from './images/icon-onboarding.svg'
 import online from './images/icon-online.svg'
 import budgeting from './images/icon-budgeting.svg'
 import api from './images/icon-api.svg'
+import currency from './images/image-currency.jpg'
+import restaurant from './images/image-restaurant.jpg'
+import plane from './images/image-plane.jpg'
+import confetti from './images/image-confetti.jpg'
 
 
 function App() {
@@ -27,7 +31,7 @@ function App() {
         <div className=''>
           <Button/>
         </div>
-        <div className=' px-[9.5%] bg-slate-100'>
+        <div className=' px-[9.5%] py-[10%] bg-slate-100'>
         <div className='text-center'>
           <h1 className='text-3xl'>Why choose Easybank?</h1>
           <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
@@ -59,6 +63,34 @@ function App() {
             your money has never been easier.</p>
           </div>
         </div>
+       
+      </div>
+      <div>
+          <h1 className='text-center text-3xl' >Latest Articles</h1>
+          <div>
+            <img src={currency} alt=''/>
+            <h4></h4>
+            <h2></h2>
+            <p></p>
+          </div>
+          <div>
+            <img src={restaurant} alt=''/>
+            <h4></h4>
+            <h2></h2>
+            <p></p>
+          </div>
+          <div>
+            <img src={plane} alt=''/>
+            <h4></h4>
+            <h2></h2>
+            <p></p>
+          </div>
+          <div>
+            <img src={confetti} alt=''/>
+            <h4></h4>
+            <h2></h2>
+            <p></p>
+          </div>
       </div>
       </div>
    
