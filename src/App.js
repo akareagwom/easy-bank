@@ -65,10 +65,10 @@ function App() {
         </div>
        
       </div>
-      <div className='px-[5%] py-[5%]'>
+      <div className='px-[5%] py-[5%] bg-slate-50'>
           <h1 className='text-center text-3xl' >Latest Articles</h1>
-          <div className="my-[7%]">
-            <img src={currency} alt=''/>
+          <div className="my-[7%] bg-white rounded-[10px]">
+            <img className="rounded-t-[10px]" src={currency} alt=''/>
             <div className='p-[7%] '>
               <h4 className="text-[12px]">By Claire Robinson</h4>
               <h2 className="text-[25px] " >Receive money in any currency with no fees</h2>
@@ -76,8 +76,8 @@ function App() {
               forced to only receive money in a single …</p>
             </div>
           </div>
-          <div className="my-[7%]">
-          <img src={restaurant} alt=''/>
+          <div className="my-[7%] bg-whi rounded-[10px]te">
+          <img className="rounded-t-[10px]" src={restaurant} alt=''/>
             <div className='p-[7%]' >
               <h4 className="text-[12px]">By Wilson Hutton</h4>
               <h2 className="text-[25px] " >Treat yourself without worrying about money</h2>
@@ -85,8 +85,8 @@ function App() {
               realistic limits each month. That means you …</p>
             </div>
           </div>
-          <div className="my-[7%]">
-            <img src={plane} alt=''/>
+          <div className="my-[7%] bg-white rounded-[10px]">
+            <img className="rounded-t-[10px]" src={plane} alt=''/>
             <div className='p-[7%]' >
               <h4 className="text-[12px]">By Wilson Hutton</h4>
               <h2 className="text-[25px] " >Take your Easybank card wherever you go</h2>
@@ -94,8 +94,8 @@ function App() {
               while you’re abroad. We’ll even show you …</p>
             </div>
           </div>
-          <div className="my-[7%]">
-            <img src={confetti} alt=''/>
+          <div className="my-[7%] bg-white rounded-[10px]">
+            <img className="rounded-t-[10px]" src={confetti} alt=''/>
             <div className="p-[7%]">
               <h4 className="text-[12px]">By Claire Robinson</h4>
               <h2 className="text-[25px] " >Our invite-only Beta accounts are now live!</h2>
