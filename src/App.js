@@ -28,8 +28,8 @@ function App({images}) {
       </div>
 
       <div className=' '>
-        <div className='absolute bg-intromobile md:bg-introdesktop md:z-[-2] bg-no-repeat p-4 top-[0%] z-[-1] '>
-          <img  src={mockups} alt="asset"/>
+        <div className='absolute bg-intromobile h-auto md:h-screen md:bg-introdesktop md:z-[-2] md:top-[0%] bg-no-repeat p-4 top-[0%] z-[-1] '>
+          <img className='w-[30%]' src={mockups} alt="asset"/>
         </div>
         <div className='pt-[99%]  px-[9.5%] text-center'>
           <h1 className='text-3xl text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
