@@ -15,10 +15,11 @@ import youtube from './images/icon-youtube.svg'
 import pinterest from './images/icon-pinterest.svg'
 import facebook from './images/icon-facebook.svg'
 import instagram from './images/icon-instagram.svg'
+import data from './data/data'
 
 
 
-function App() {
+function App({images}) {
   return (
     <div className=" h-screen absolute">
       
@@ -27,7 +28,7 @@ function App() {
       </div>
 
       <div className=' '>
-        <div className='absolute bg-intromobile bg-no-repeat p-4 top-[0%] z-[-1] '>
+        <div className='absolute bg-intromobile md:bg-introdesktop md:z-[-2] bg-no-repeat p-4 top-[0%] z-[-1] '>
           <img  src={mockups} alt="asset"/>
         </div>
         <div className='pt-[99%]  px-[9.5%] text-center'>
