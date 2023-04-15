@@ -29,17 +29,18 @@ function App({images}) {
 
       <div>
         <div className=' md:flex '>
-          <div className='absolute bg-intromobile h-auto md:h-screen md:bg-[0%] md:bg-introdesktop md:left-[35%] md:z-[-2] md:top-[-5%] bg-no-repeat p-4 top-[0%] z-[-1] '>
+          <div className='absolute bg-intromobile  h-auto md:h-screen md:bg-[0%] md:bg-introdesktop md:left-[35%] md:z-[-2] md:top-[-5%] bg-no-repeat p-4 top-[0%] z-[-1] '>
             <img className='w-[70%] md:ml-[30%]' src={mockups} alt="asset"/>
           </div>
-          <div className='pt-[99%] md:pt-[10%] md:pr-[55%] md:w-[100%] px-[9.5%] text-center'>
-            <h1 className='text-3xl text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
+          <div className='pt-[99%] md:pt-[10%] md:pr-[57%]  px-[9.5%] text-center'>
+            <h1 className='text-3xl md:text-3xl text-slate-700 text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
             <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
             for spending, saving, budgeting, investing, and much more.</p>
-          </div>
-          <div className=''>
+            <div className=''>
             <Button/>
+            </div>
           </div>
+          
         </div>
         <div className=' px-[9.5%] py-[10%] bg-slate-100'>
         <div className='text-center'>
