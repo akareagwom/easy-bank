@@ -43,7 +43,7 @@ function App({images}) {
           
         </div>
         <div className=' px-[9.5%] py-[10%] bg-slate-100'>
-        <div className='text-center'>
+        <div className='text-center md:text-start'>
           <h1 className='text-3xl'>Why choose Easybank?</h1>
           <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
           your finances like never before.</p>
