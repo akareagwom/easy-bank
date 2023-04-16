@@ -29,7 +29,7 @@ function App({images}) {
 
       <div>
         <div className='md:overflow-hidden md:flex w-full '>
-          <div className='absolute md:overflow-hidden bg-intromobile  h-auto md:h-screen md:bg-[0%] md:bg-introdesktop md:left-[35%] md:z-[-2] md:top-[-5%] bg-no-repeat p-4 top-[0%] z-[-1] '>
+          <div className='absolute md:overflow-hidden bg-intromobile  h-auto md:h-screen md:bg-[0%] w-full md:bg-introdesktop md:left-[35%] md:z-[-2] md:top-[-5%] bg-no-repeat p-4 top-[0%] z-[-1] '>
             <img className='w-[70%] md:w-[90%] md:ml-[30%]' src={mockups} alt="asset"/>
           </div>
           <div className='pt-[99%] md:pt-[10%] md:pr-[57%]  px-[9.5%] text-center'>
