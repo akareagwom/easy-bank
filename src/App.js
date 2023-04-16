@@ -28,9 +28,9 @@ function App({images}) {
       </div>
 
       <div>
-        <div className='md:overflow-hidden md:flex w-full '>
-          <div className='absolute md:overflow-hidden bg-intromobile  h-auto md:h-screen md:bg-[0%] w-full md:bg-introdesktop md:left-[35%] md:z-[-2] md:top-[-5%] bg-no-repeat p-4 top-[0%] z-[-1] '>
-            <img className='w-[70%] md:w-[90%] md:ml-[30%]' src={mockups} alt="asset"/>
+        <div className='md:overflow-hidden md:flex  '>
+          <div className='absolute md:overflow-hidden bg-intromobile  h-auto  md:bg-[0%] md:w-[65%] md:h-auto md:bg-introdesktop md:left-[35%] md:z-[2] md:top-[-45%] bg-no-repeat p-4 top-[0%] z-[-1] '>
+            <img className='w-[70%]  md:w-[100%]  md:ml-[20%] md:mt-[30%]' src={mockups} alt="asset"/>
           </div>
           <div className='pt-[99%] md:pt-[10%] md:pr-[57%]  px-[9.5%] text-center'>
             <h1 className='text-3xl md:text-3xl text-slate-700 text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
@@ -42,7 +42,7 @@ function App({images}) {
           </div>
           
         </div>
-        <div className=' px-[9.5%] py-[10%] bg-slate-100'>
+        <div className='  px-[9.5%] py-[10%] bg-slate-100'>
         <div className='text-center md:text-start md:w-[80%]'>
           <h1 className='text-3xl md:text-[20px]'>Why choose Easybank?</h1>
           <p lassName=' md:text-[12px]'>We leverage Open Banking to turn your bank account into your financial hub. Control 
@@ -75,8 +75,8 @@ function App({images}) {
           </div>
         </div>
        
-      </div>
-      <div className='px-[5%] py-[5%] bg-slate-50'>
+        </div>
+        <div className='absolute px-[5%] py-[5%] bg-slate-50'>
           <h1 className='text-center text-3xl' >Latest Articles</h1>
           <div className='md:flex md:justify-around'>
             <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl">
