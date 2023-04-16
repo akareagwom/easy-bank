@@ -1,10 +1,6 @@
 import Button from './components/button';
 import Navbar from './components/navbar';
 import mockups from './images/image-mockups.png'
-import onboarding from './images/icon-onboarding.svg'
-import online from './images/icon-online.svg'
-import budgeting from './images/icon-budgeting.svg'
-import api from './images/icon-api.svg'
 import currency from './images/image-currency.jpg'
 import restaurant from './images/image-restaurant.jpg'
 import plane from './images/image-plane.jpg'
@@ -15,11 +11,19 @@ import youtube from './images/icon-youtube.svg'
 import pinterest from './images/icon-pinterest.svg'
 import facebook from './images/icon-facebook.svg'
 import instagram from './images/icon-instagram.svg'
-import data from './data/data'
+import data from './data'
+import { useState } from 'react';
 
 
 
-function App({images}) {
+
+function App() {
+  const [data, setData] = useState([
+    {title:"Online Banking",photo:require('./images/icon-online.svg').default,body:"Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."},
+    {title:"Simple budgeting",photo:require('./images/icon-budgeting.svg').default,body:"See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits."},
+    {title:"Fast Onboarding",photo:require('./images/icon-onboarding.svg').default,body:"We don’t do branches. Open your account in minutes online and start taking control of your finances right away."},
+    {title:"Open API",photo:require('./images/icon-api.svg').default,body:"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."}
+  ])
   return (
     <div className=" h-screen absolute">
       
@@ -30,7 +34,7 @@ function App({images}) {
       <div>
         <div className='md:overflow-hidden md:flex  '>
           <div className='absolute md:overflow-hidden bg-intromobile  h-auto  md:bg-[0%] md:w-[65%] md:h-auto md:bg-introdesktop md:left-[35%] md:z-[1] md:top-[-75%] bg-no-repeat p-4 top-[0%] z-[-1] '>
-            <img className='w-[70%]  md:w-[100%]  md:ml-[20%] md:mt-[30%]' src={mockups} alt="asset"/>
+            <img className='w-[70%]  md:w-[90%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
           </div>
           <div className='pt-[99%] md:pt-[10%] md:pr-[57%]  px-[9.5%] text-center'>
             <h1 className='text-3xl md:text-3xl text-slate-700 text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
@@ -45,35 +49,21 @@ function App({images}) {
         <div className='  px-[9.5%] py-[10%] bg-slate-100'>
         <div className='text-center md:text-start md:w-[80%]'>
           <h1 className='text-3xl md:text-[20px]'>Why choose Easybank?</h1>
-          <p lassName=' md:text-[12px]'>We leverage Open Banking to turn your bank account into your financial hub. Control 
+          <p className=' md:text-[12px]'>We leverage Open Banking to turn your bank account into your financial hub. Control 
           your finances like never before.</p>
         </div>
-        <div className='block text-center md:text-start w-full justify-center md:flex  items-center'>
-          <div>
-            <img className="ml-[35%] my-[5%]"  src ={online} alt=""/>
-            <h2 className="text-2xl md:text-[20px] my-[5%]">Online Banking</h2>
-            <p className='md:text-[12px]'>Our modern web and mobile applications allow you to keep track of your finances 
-            wherever you are in the world.</p>
+        <div >
+          <div className='block text-center md:text-start w-full justify-center md:flex  items-center'>
+             {data.map((data)=>( 
+              <div  key={data.title}>
+                <img className="ml-[35%] my-[5%]" src={data.photo} alt=""/>
+                <h1 className="text-2xl md:text-[20px] my-[5%]">{data.title}</h1>
+                <p className='md:text-[12px]'>{data.body}</p>
+              </div> 
+             ))}
+      
           </div>
-          <div>
-            <img className="ml-[35%] my-[5%]" src ={budgeting} alt=""/>
-            <h2 className="text-2xl md:text-[20px] my-[5%]">Simple budgeting</h2>
-            <p className='md:text-[12px]'>See exactly where your money goes each month. Receive notifications when you’re 
-            close to hitting your limits.</p>
           </div>
-          <div>
-            <img className="ml-[35%]  my-[5%]" src ={onboarding} alt=""/>
-            <h2 className="text-2xl md:text-[20px] my-[5%]">Fast Onboarding</h2>
-            <p className='md:text-[12px]'>We don’t do branches. Open your account in minutes online and start taking control 
-            of your finances right away.</p>
-          </div>
-          <div>
-            <img className="ml-[35%] my-[5%]" src ={api} alt=""/>
-            <h2 className="text-2xl md:text-[20px] my-[5%]">Open API</h2>
-            <p className='md:text-[12px]'>Manage your savings, investments, pension, and much more from one account. Tracking 
-            your money has never been easier.</p>
-          </div>
-        </div>
        
         </div>
         <div className='absolute px-[5%] py-[5%] bg-slate-50'>
