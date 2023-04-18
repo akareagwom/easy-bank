@@ -24,6 +24,12 @@ function App() {
     {title:"Fast Onboarding",photo:require('./images/icon-onboarding.svg').default,body:"We don’t do branches. Open your account in minutes online and start taking control of your finances right away."},
     {title:"Open API",photo:require('./images/icon-api.svg').default,body:"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."}
   ])
+  const [info, setInfo] = useState([
+    {title:"By Claire Robinson",phrase:"Receive money in any currency with no fees",img:require('./images/image-currency.jpg').default,body:"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"},
+    {title:"By Wilson Hutton",phrase:"Treat yourself without worrying about money",img:require('./images/image-restaurant.jpg').default,body:"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"},
+    {title:"By Wilson Hutton",phrase:"Take your Easybank card wherever you go",img:require('./images/image-plane.jpg').default,body:"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"},
+    {title:"By Claire Robinson",phrase:"Our invite-only Beta accounts are now live!",img:require('./images/image-confetti.jpg').default,body:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."}
+  ])
   return (
     <div className=" h-screen absolute">
       
@@ -33,7 +39,7 @@ function App() {
 
       <div>
         <div className='md:overflow-hidden md:flex  '>
-          <div className='absolute md:overflow-hidden bg-intromobile  h-auto  md:bg-[0%] md:w-[65%] md:h-auto md:bg-introdesktop md:left-[35%] md:z-[1] md:top-[-75%] bg-no-repeat p-4 top-[0%] z-[-1] '>
+          <div className='absolute md:overflow-x-hidden bg-intromobile  h-auto  md:bg-[0%] md:w-[65%] md:h-auto md:bg-introdesktop md:left-[35%] md:z-[1] md:top-[-75%] bg-no-repeat p-4 top-[0%] z-[-1] '>
             <img className='w-[70%]  md:w-[90%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
           </div>
           <div className='pt-[99%] md:pt-[10%] md:pr-[57%]  px-[9.5%] text-center'>
@@ -66,68 +72,52 @@ function App() {
           </div>
        
         </div>
-        <div className='absolute px-[5%] py-[5%] bg-slate-50'>
+        <div className=' px-[5%] py-[5%] bg-slate-50'>
           <h1 className='text-center text-3xl' >Latest Articles</h1>
           <div className='md:flex md:justify-around'>
-            <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl">
-              <img className="rounded-t-[10px]" src={currency} alt=''/>
-              <div className='p-[7%]  '>
-                <h4 className="md:text-[10px] text-[12px]">By Claire Robinson</h4>
-                <h2 className="text-[25px] md:text-[16px] " >Receive money in any currency with no fees</h2>
-                <p className="text-[16px] md:text-[12px] " >The world is getting smaller and we’re becoming more mobile. So why should you be 
-                forced to only receive money in a single …</p>
-              </div>
-            </div>
-            <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl">
-            <img className="rounded-t-[10px]" src={restaurant} alt=''/>
-              <div className='p-[7%]' >
-                <h4 className="md:text-[10px] text-[12px]">By Wilson Hutton</h4>
-                <h2 className="text-[25px] md:text-[16px] " >Treat yourself without worrying about money</h2>
-                <p className="text-[16px] md:text-[12px] " >Our simple budgeting feature allows you to separate out your spending and set 
-                realistic limits each month. That means you …</p>
-              </div>
-            </div>
-            <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl">
-              <img className="rounded-t-[10px]" src={plane} alt=''/>
-              <div className='p-[7%]' >
-                <h4 className="md:text-[10px] text-[12px]">By Wilson Hutton</h4>
-                <h2 className="text-[25px] md:text-[16px] " >Take your Easybank card wherever you go</h2>
-                <p className="text-[16px] md:text-[12px] " >We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-                while you’re abroad. We’ll even show you …</p>
-              </div>
-            </div>
-            <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl">
-              <img className="rounded-t-[10px]" src={confetti} alt=''/>
-              <div className="p-[7%]">
-                <h4 className="md:text-[10px] text-[12px]">By Claire Robinson</h4>
-                <h2 className="text-[25px] md:text-[16px] " >Our invite-only Beta accounts are now live!</h2>
-                <p className="text-[16px] md:text-[12px] " >After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-                It’s easy to request an invite through the site ...</p>
-              </div>
-            </div>
+              {info.map((info)=>(
+                <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl" key={data.title}>
+                    <img className="rounded-t-[10px]" src={info.img}/>
+                    <div  className='p-[7%]'>
+                    <h4 className="md:text-[10px] text-[12px]">{info.title}</h4>
+                    <h2 className="text-[25px] md:text-[16px] ">{info.phrase}</h2>
+                    <p className="text-[16px] md:text-[12px] "> {info.body} </p>
+                    </div>
+                </div>
+              ))}
           </div>
       </div>
-      <div className='bg-slate-800 py-[5%]'>
-        {/* <img src={logo} alt=''/> */}
-        <div className='flex py-[5%] justify-center'  >
-          <img src={facebook} alt=''/>
-          <img src={youtube} alt=''/>
-          <img src={twitter} alt=''/>
-          <img src={pinterest} alt=''/>
-          <img src={instagram} alt=''/>
+      <div className='bg-slate-800 flex w-full py-[5%]'>
+       
+        
+        <div className='md:flex w-[50%] justify-around'>
+          <div>
+              {/* <img src={logo} alt=''/> */}
+            <div className='flex py-[5%] justify-center'  >
+              <img src={facebook} alt=''/>
+              <img src={youtube} alt=''/>
+              <img src={twitter} alt=''/>
+              <img src={pinterest} alt=''/>
+              <img src={instagram} alt=''/>
+            </div>
+          </div>
+          <ul className='text-[16px] pt-[] text-white text-center'>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Blog</li>
+          </ul>  
+          <ul className='text-[16px] pt-[] text-white text-center'>
+            <li>Careers</li>
+            <li>Support</li>
+            <li>Private Policy</li>
+          </ul>  
+              
         </div>
-        <ul className='text-[16px] pt-[5%] text-white text-center' >
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Careers</li>
-          <li>Support</li>
-          <li>Private Policy</li>
-        </ul>
-        <div>
-          <Button/>
+
+        <div className='mt-[-10%]'>
+          <Button className='w-[20%] '/>
+          <footer className='text-white text-center'>© Easybank. All Rights Reserved</footer>
         </div>
-        <footer className='text-white text-center'>© Easybank. All Rights Reserved</footer>
       </div>
       </div>
    
