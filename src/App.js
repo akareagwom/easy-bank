@@ -1,11 +1,11 @@
 import Button from './components/button';
 import Navbar from './components/navbar';
 import mockups from './images/image-mockups.png'
-import currency from './images/image-currency.jpg'
-import restaurant from './images/image-restaurant.jpg'
-import plane from './images/image-plane.jpg'
-import confetti from './images/image-confetti.jpg'
-import logo from './images/logo.svg'
+// import currency from './images/image-currency.jpg'
+// import restaurant from './images/image-restaurant.jpg'
+// import plane from './images/image-plane.jpg'
+// import confetti from './images/image-confetti.jpg'
+// import logo from './images/logo.svg'
 import twitter from './images/icon-twitter.svg'
 import youtube from './images/icon-youtube.svg'
 import pinterest from './images/icon-pinterest.svg'
@@ -25,10 +25,10 @@ function App() {
     {title:"Open API",photo:require('./images/icon-api.svg').default,body:"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."}
   ])
   const [info, setInfo] = useState([
-    {title:"By Claire Robinson",phrase:"Receive money in any currency with no fees",img:require('./images/image-currency.jpg').default,body:"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"},
-    {title:"By Wilson Hutton",phrase:"Treat yourself without worrying about money",img:require('./images/image-restaurant.jpg').default,body:"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"},
-    {title:"By Wilson Hutton",phrase:"Take your Easybank card wherever you go",img:require('./images/image-plane.jpg').default,body:"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"},
-    {title:"By Claire Robinson",phrase:"Our invite-only Beta accounts are now live!",img:require('./images/image-confetti.jpg').default,body:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."}
+    {title:"By Claire Robinson",phrase:"Receive money in any currency with no fees",photo:require('./images/image-currency.jpg').default,body:"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"},
+    {title:"By Wilson Hutton",phrase:"Treat yourself without worrying about money",photo:require('./images/image-restaurant.jpg').default,body:"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"},
+    {title:"By Wilson Hutton",phrase:"Take your Easybank card wherever you go",photo:require('./images/image-plane.jpg').default,body:"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"},
+    {title:"By Claire Robinson",phrase:"Our invite-only Beta accounts are now live!",photo:require('./images/image-confetti.jpg').default,body:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."}
   ])
   return (
     <div className=" h-screen absolute">
@@ -62,7 +62,7 @@ function App() {
           <div className='block text-center md:text-start w-full justify-center md:flex  items-center'>
              {data.map((data)=>( 
               <div  key={data.title}>
-                <img className="ml-[35%] my-[5%]" src={data.photo} alt=""/>
+                <img className="ml-[35%]  my-[5%]" src={data.photo} alt=""/>
                 <h1 className="text-2xl md:text-[20px] my-[5%]">{data.title}</h1>
                 <p className='md:text-[12px]'>{data.body}</p>
               </div> 
@@ -77,7 +77,7 @@ function App() {
           <div className='md:flex md:justify-around'>
               {info.map((info)=>(
                 <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl" key={data.title}>
-                    <img className="rounded-t-[10px]" src={info.img}/>
+                    <img className="rounded-t-[10px] w-2" src={info.photo}  alt=""/>
                     <div  className='p-[7%]'>
                     <h4 className="md:text-[10px] text-[12px]">{info.title}</h4>
                     <h2 className="text-[25px] md:text-[16px] ">{info.phrase}</h2>
@@ -87,10 +87,10 @@ function App() {
               ))}
           </div>
       </div>
-      <div className='bg-slate-800 flex w-full py-[5%]'>
+      <div className='bg-slate-800 md:flex w-full justify-center md:justify-around py-[5%]'>
        
         
-        <div className='md:flex w-[50%] justify-around'>
+        <div className='md:flex m-[20%] md:m-0 w-[45%] justify-around'>
           <div>
               {/* <img src={logo} alt=''/> */}
             <div className='flex py-[5%] justify-center'  >
@@ -114,12 +114,14 @@ function App() {
               
         </div>
 
-        <div className='mt-[-10%]'>
-          <Button className='w-[20%] '/>
+        <div className='mt-[1.5%]'>
+          <div className='md:w-[125%]'>
+            <Button/>
+          </div>
           <footer className='text-white text-center'>© Easybank. All Rights Reserved</footer>
         </div>
       </div>
-      </div>
+    </div>
    
 
       
