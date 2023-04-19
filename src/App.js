@@ -54,7 +54,7 @@ function App() {
           </div>
           
         </div>
-        <div className='  px-[9.5%] py-[10%] bg-slate-100'>
+        <div className='  px-[5%] py-[5%] bg-slate-100'>
         <div className='text-center md:text-start md:w-[40%]'>
           <h1 className='text-3xl md:text-[25px]'>Why choose Easybank?</h1>
           <p className=' md:text-[16px]'>We leverage Open Banking to turn your bank account into your financial hub. Control 
