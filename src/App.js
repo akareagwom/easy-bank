@@ -31,16 +31,18 @@ function App() {
     {title:"By Claire Robinson",phrase:"Our invite-only Beta accounts are now live!",photo:require('./images/image-confetti.jpg').default,body:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."}
   ])
   return (
-    <div className=" h-screen absolute">
+    <div className=" h-screen relative">
       
       <div className=' w-full absolute z-[2]'>
         <Navbar/>
       </div>
 
       <div>
-        <div className='md:overflow-hidden md:flex  '>
-          <div className='absolute md:overflow-x-hidden bg-intromobile  h-auto  md:bg-[0%] md:w-[65%] md:h-auto md:bg-introdesktop md:left-[35%] md:z-[1] md:top-[-75%] bg-no-repeat p-4 top-[0%] z-[-1] '>
+        <div className='md:overflow-hidden bg-intromobile md:bg-introdesktop md:bg-[-90%] h-screen  bg-no-repeat md:flex  '>
+          <div>
+          <div className='absolute md:overflow-x-hidden   h-auto   md:w-[65%] md:h-auto  md:left-[35%] md:z-[1] md:top-[-45%] p-4 top-[0%] z-[-1] '>
             <img className='w-[70%]  md:w-[90%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
+          </div>
           </div>
           <div className='pt-[99%] md:pt-[10%] md:pr-[57%]  px-[9.5%] text-center'>
             <h1 className='text-3xl md:text-3xl text-slate-700 text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
@@ -62,7 +64,7 @@ function App() {
           <div className='block text-center md:text-start w-full justify-center md:flex  items-center'>
              {data.map((data)=>( 
               <div  key={data.title}>
-                <img className="ml-[35%]  my-[5%]" src={data.photo} alt=""/>
+                <img className="ml-[35%] md:ml-[1%]  my-[5%]" src={data.photo} alt=""/>
                 <h1 className="text-2xl md:text-[20px] my-[5%]">{data.title}</h1>
                 <p className='md:text-[12px]'>{data.body}</p>
               </div> 
