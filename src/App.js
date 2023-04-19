@@ -44,7 +44,7 @@ function App() {
             <img className='w-[70%]  md:w-[90%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
           </div>
           </div>
-          <div className='pt-[99%] md:pt-[10%] md:pr-[57%]  px-[9.5%] text-center'>
+          <div className='pt-[99%] md:pt-[20%] md:pr-[57%]  px-[5.5%] text-center'>
             <h1 className='text-3xl md:text-3xl text-slate-700 text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
             <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
             for spending, saving, budgeting, investing, and much more.</p>
