@@ -31,7 +31,7 @@ function App() {
     {title:"By Claire Robinson",phrase:"Our invite-only Beta accounts are now live!",photo:require('./images/image-confetti.jpg').default,body:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."}
   ])
   return (
-    <div className=" h-screen relative">
+    <div className=" h-screen font-sans relative">
       
       <div className=' w-full absolute z-[2]'>
         <Navbar/>
