@@ -55,13 +55,13 @@ function App() {
           
         </div>
         <div className='  px-[9.5%] py-[10%] bg-slate-100'>
-        <div className='text-center md:text-start md:w-[70%]'>
+        <div className='text-center md:text-start md:w-[40%]'>
           <h1 className='text-3xl md:text-[25px]'>Why choose Easybank?</h1>
           <p className=' md:text-[16px]'>We leverage Open Banking to turn your bank account into your financial hub. Control 
           your finances like never before.</p>
         </div>
         <div >
-          <div className='block text-center md:text-start w-full justify-center md:flex  items-center'>
+          <div className='block text-center md:text-start w-full justify-center md:justify-between md:flex p-[0%]  items-center'>
              {data.map((data)=>( 
               <div  key={data.title}>
                 <img className="ml-[35%] md:ml-[1%]  my-[5%]" src={data.photo} alt=""/>
@@ -75,7 +75,7 @@ function App() {
        
         </div>
         <div className=' px-[5%] py-[5%] bg-slate-50'>
-          <h1 className='text-center text-3xl' >Latest Articles</h1>
+          <h1 className='text-center md:text-start text-3xl' >Latest Articles</h1>
           <div className='md:flex md:justify-around'>
               {info.map((info)=>(
                 <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl" key={data.title}>
