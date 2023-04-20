@@ -25,10 +25,10 @@ function App() {
     {title:"Open API",photo:require('./images/icon-api.svg').default,body:"Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."}
   ])
   const [info, setInfo] = useState([
-    {title:"By Claire Robinson",phrase:"Receive money in any currency with no fees",photo:require('./images/image-currency.jpg').default,body:"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"},
-    {title:"By Wilson Hutton",phrase:"Treat yourself without worrying about money",photo:require('./images/image-restaurant.jpg').default,body:"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"},
-    {title:"By Wilson Hutton",phrase:"Take your Easybank card wherever you go",photo:require('./images/image-plane.jpg').default,body:"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"},
-    {title:"By Claire Robinson",phrase:"Our invite-only Beta accounts are now live!",photo:require('./images/image-confetti.jpg').default,body:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."}
+    {title:"By Claire Robinson",phrase:"Receive money in any currency with no fees",photo:'image-currency.jpg',body:"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"},
+    {title:"By Wilson Hutton",phrase:"Treat yourself without worrying about money",photo:'image-restaurant.jpg',body:"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"},
+    {title:"By Wilson Hutton",phrase:"Take your Easybank card wherever you go",photo:'image-plane.jpg',body:"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"},
+    {title:"By Claire Robinson",phrase:"Our invite-only Beta accounts are now live!",photo:'image-confetti.jpg',body:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."}
   ])
   return (
     <div className=" h-screen font-sans relative">
@@ -79,7 +79,7 @@ function App() {
           <div className='md:flex md:justify-around'>
               {info.map((info)=>(
                 <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl" key={data.title}>
-                    <img className="rounded-t-[10px] w-2" src={info.photo}  alt=""/>
+                    <img className="rounded-t-[2%] " src={info.photo}alt=""/>
                     <div  className='p-[7%]'>
                     <h4 className="md:text-[10px] text-[12px]">{info.title}</h4>
                     <h2 className="text-[25px] md:text-[16px] ">{info.phrase}</h2>
