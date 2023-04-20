@@ -40,13 +40,13 @@ function App() {
       <div>
         <div className='md:overflow-hidden bg-intromobile md:bg-introdesktop md:bg-[550%] h-screen  bg-no-repeat md:flex  '>
           <div>
-          <div className='absolute md:overflow-x-hidden   h-auto   md:w-[65%] md:h-auto  md:left-[35%] md:z-[1] z-[1] md:top-[-45%] p-4 top-[-15%]  '>
+          <div className='absolute md:overflow-x-hidden   h-auto   md:w-[65%] md:h-auto  md:left-[45%] md:z-[1] z-[1] md:top-[-45%] p-4 top-[-15%]  '>
             <img className='w-[100%]  md:w-[80%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
           </div>
           </div>
           <div className='pt-[99%] md:pt-[20%] md:pr-[57%]  px-[5.5%] md:text-start text-center'>
-            <h1 className='text-3xl md:text-3xl text-slate-700 text-[hsl(233, 8%, 62%)]'>Next generation digital banking</h1>
-            <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
+            <h1 className='text-3xl md:text-3xl text-[#2D314D]'>Next generation digital banking</h1>
+            <p className='text-[#9698A6]'>Take your financial life online. Your Easybank account will be a one-stop-shop 
             for spending, saving, budgeting, investing, and much more.</p>
             <div className=''>
             <Button/>
@@ -56,17 +56,17 @@ function App() {
         </div>
         <div className='  px-[5%] py-[5%] bg-slate-100'>
         <div className='text-center md:text-start md:w-[40%]'>
-          <h1 className='text-3xl md:text-[25px]'>Why choose Easybank?</h1>
-          <p className=' md:text-[16px]'>We leverage Open Banking to turn your bank account into your financial hub. Control 
+          <h1 className='text-3xl md:text-[25px] text-[#2D314D] '>Why choose Easybank?</h1>
+          <p className='text-[#9698A6] md:text-[16px]'>We leverage Open Banking to turn your bank account into your financial hub. Control 
           your finances like never before.</p>
         </div>
         <div >
           <div className='block text-center md:text-start w-full justify-center md:justify-between md:flex p-[0%]  items-center'>
              {data.map((data)=>( 
               <div  key={data.title}>
-                <img className="ml-[35%] md:ml-[1%]  my-[5%]" src={data.photo} alt=""/>
-                <h1 className="text-2xl md:text-[20px] my-[5%]">{data.title}</h1>
-                <p className='md:text-[12px]'>{data.body}</p>
+                <img className=" ml-[35%] w-50% md:ml-[1%]  my-[5%]" src={data.photo} alt=""/>
+                <h1 className="text-[#2D314D] text-2xl md:text-[20px] my-[5%]">{data.title}</h1>
+                <p className='text-[#9698A6] md:text-[12px]'>{data.body}</p>
               </div> 
              ))}
       
@@ -81,9 +81,9 @@ function App() {
                 <div className="my-[7%] md:w-[80%] md:mx-[1%] bg-white rounded-[10px] shadow-xl" key={data.title}>
                     <img className="rounded-t-[2%] " src={info.photo}alt=""/>
                     <div  className='p-[7%]'>
-                    <h4 className="md:text-[10px] text-[12px]">{info.title}</h4>
-                    <h2 className="text-[25px] md:text-[16px] ">{info.phrase}</h2>
-                    <p className="text-[16px] md:text-[12px] "> {info.body} </p>
+                    <h4 className="text-[#9698A6] md:text-[10px] text-[12px]">{info.title}</h4>
+                    <h2 className=" text-[#2D314D] text-[25px] md:text-[16px] ">{info.phrase}</h2>
+                    <p className="text-[#9698A6] text-[16px] md:text-[12px] "> {info.body} </p>
                     </div>
                 </div>
               ))}
