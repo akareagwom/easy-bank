@@ -39,7 +39,7 @@ function App() {
 
       <div>
         <div className='md:overflow-hidden bg-intromobile md:bg-introdesktop md:bg-[550%] h-screen  bg-no-repeat md:flex  '>
-          <div>
+          <div className=''>
           <div className='absolute md:overflow-x-hidden   h-auto   md:w-[65%] md:h-auto  md:left-[45%] md:z-[1] z-[1] md:top-[-45%] p-4 top-[-15%]  '>
             <img className='w-[100%]  md:w-[80%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
           </div>
