@@ -41,7 +41,7 @@ function App() {
         <div className='md:overflow-hidden bg-intromobile md:bg-introdesktop md:bg-[550%] h-screen  bg-no-repeat md:flex  '>
           <div>
           <div className='absolute md:overflow-x-hidden   h-auto   md:w-[65%] md:h-auto  md:left-[35%] md:z-[1] z-[1] md:top-[-45%] p-4 top-[-15%]  '>
-            <img className='w-[100%]  md:w-[90%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
+            <img className='w-[100%]  md:w-[80%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
           </div>
           </div>
           <div className='pt-[99%] md:pt-[20%] md:pr-[57%]  px-[5.5%] md:text-start text-center'>
