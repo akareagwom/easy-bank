@@ -12,7 +12,7 @@ const Navbar = () => {
                 <div className='md:w-[20%] mt-[5%] md:mt-0 '>
                     <img src={logo} alt="asset" srcSet="" />
                 </div>
-              <div className={`md:flex  p-[4%] md:p-[0%] block justify-around m-[1%] md:m-0 md:static absolute w-[90%] top-[60%] md:top-0 rounded-[5%] text-center bg-white md:justify-between  ${open ? "block" : "hidden"}`}>
+              <div className={`md:flex  p-[4%] md:p-[0%] block justify-around m-[0] left-[5%] md:left-0 md:m-0 md:static absolute w-[90%] top-[150%] md:top-0 rounded-[5%] text-center bg-white md:justify-between  ${open ? "block" : "hidden"}`}>
                 <ul className='md:flex md:justify-between md:w-[35%]'>
                     <li>Home</li>
                     <li>About</li>

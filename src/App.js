@@ -40,8 +40,8 @@ function App() {
       <div>
         <div className='md:overflow-hidden bg-intromobile md:bg-introdesktop md:bg-[550%] h-screen  bg-no-repeat md:flex  '>
           <div>
-          <div className='absolute md:overflow-x-hidden   h-auto   md:w-[65%] md:h-auto  md:left-[35%] md:z-[1] md:top-[-45%] p-4 top-[0%] z-[-1] '>
-            <img className='w-[70%]  md:w-[90%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
+          <div className='absolute md:overflow-x-hidden   h-auto   md:w-[65%] md:h-auto  md:left-[35%] md:z-[1] z-[1] md:top-[-45%] p-4 top-[-15%]  '>
+            <img className='w-[100%]  md:w-[90%] md:mt-[30%]  md:ml-[20%]' src={mockups} alt="asset"/>
           </div>
           </div>
           <div className='pt-[99%] md:pt-[20%] md:pr-[57%]  px-[5.5%] md:text-start text-center'>
@@ -92,7 +92,7 @@ function App() {
       <div className='bg-slate-800 md:flex w-full justify-center md:justify-around py-[5%]'>
        
         
-        <div className='md:flex m-[20%] md:m-0 w-[45%] justify-around'>
+        <div className='md:flex mx-[25%] my-[10%] md:m-0 w-[45%] justify-around'>
           <div>
               <div className='text-white'>
                 <img src={foot} alt=''/>
@@ -118,8 +118,8 @@ function App() {
               
         </div>
 
-        <div className='mt-[1.5%]'>
-          <div className='md:w-[125%]'>
+        <div className='md:mt-[1.5%]  '>
+          <div className='md:w-[125%] ml-[30%] mr-0 md:ml-0'>
             <Button/>
           </div>
           <footer className='text-white text-center'>© Easybank. All Rights Reserved</footer>
